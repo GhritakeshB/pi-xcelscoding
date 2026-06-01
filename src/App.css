@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background: #0f172a;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.movie-card {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  border-radius: 18px;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+  border: 1px solid #334155;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(56,189,248,0.4);
+}
+
+.movie-card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.movie-card p {
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+button {
+  background: #38bdf8;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0284c7;
+}
+
+.movie-details {
+  max-width: 900px;
+  margin: auto;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.movie-details h1 {
+  margin-top: 0;
+}
+
+.movie-details p {
+  line-height: 1.8;
+  color: #e2e8f0;
+}
+
+.rating {
+  display: inline-block;
+  background: #22c55e;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
